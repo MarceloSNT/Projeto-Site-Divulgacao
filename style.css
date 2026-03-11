@@ -24,6 +24,11 @@ ol {
   line-height: 2.5em;
 }
 
+svg {
+  margin-right: 10px;
+  color: var(--BlueMedium);
+}
+
 #home {
   background-color: var(--BlueDeep);
 
@@ -184,6 +189,26 @@ a {
   border-bottom-left-radius: 15px;
   background-color: var(--WhiteSoft);
   padding: 15px;
+  text-align: center;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#contatos h3 {
+  margin-bottom: 50px;
+}
+
+#contato li {
+  color: var(--Black);
+  text-align: start;
+  margin: 10px 0px;
+}
+#contato p a {
+  color: var(--Black);
+  margin-left: 40px;
 }
 
 #contato-form {
@@ -194,4 +219,42 @@ a {
   border-bottom-right-radius: 15px;
   background-color: var(--WhiteSoft);
   padding: 15px;
+}
+
+#contato-form form {
+  height: 100%;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 45dvw;
+  height: 40px;
+  border: 2px solid var(--BlueLight);
+  margin: 10px 0px;
+  padding: 5px;
+}
+textarea {
+  width: 45dvw;
+  height: 125px;
+  border: 2px solid var(--BlueLight);
+  margin: 10px 0px;
+  padding: 5px;
+}
+button {
+  border: 2px solid var(--BlueLight);
+  padding: 2px 5px;
+  background-color: var(--WhiteSoft);
+  color: var(--BlueLight);
+  height: 50px;
+  width: 200px;
+}
+
+button:hover {
+  border: 2px solid var(--BlueMedium);
+  background-color: var(--BlueMedium);
+  color: var(--WhiteSoft);
+  transition: 0.3s;
 }
