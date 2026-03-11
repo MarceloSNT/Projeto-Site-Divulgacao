@@ -49,6 +49,10 @@ ol {
   background-color: var(--WhiteSoft);
 }
 
+#header {
+  position: fixed;
+  width: 100dvw;
+}
 #list-nav {
   display: flex;
   flex-flow: row nowrap;
@@ -160,4 +164,34 @@ a {
 }
 .title-card {
   font-size: 1.2em;
+}
+
+#contato {
+  background-color: var(--BlueDeep);
+
+  min-height: 100dvh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#contatos {
+  width: 30dvw;
+  height: 70dvh;
+  border: 1px solid var(--WhiteSoft);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: var(--WhiteSoft);
+  padding: 15px;
+}
+
+#contato-form {
+  width: 60dvw;
+  height: 70dvh;
+  border: 1px solid var(--WhiteSoft);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--WhiteSoft);
+  padding: 15px;
 }
