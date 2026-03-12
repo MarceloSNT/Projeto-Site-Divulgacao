@@ -333,6 +333,7 @@ footer {
   #service-cards {
     grid-template-columns: 1fr;
     width: 90vw;
+    margin: auto;
   }
 
   #contatos {
@@ -347,12 +348,15 @@ footer {
 
   #contato li {
     text-align: center;
-    width: 100%;
+    width: 80%;
   }
 
   #contato p a {
     margin-left: 0;
     display: inline-block;
     text-align: center;
+  }
+  hr {
+    width: 50%;
   }
 }
