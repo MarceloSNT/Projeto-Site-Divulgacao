@@ -413,6 +413,7 @@ footer {
     color: var(--WhiteSoft);
     text-align: start;
     margin: 10px 0px;
+    width: 80%;
   }
   #contato p a {
     color: var(--WhiteSoft);
@@ -449,5 +450,20 @@ footer {
     padding: 15px 0px;
     text-align: center;
     color: var(--WhiteSoft);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #home-main > article > h1 {
+    font-size: 2em;
+  }
+  #service-cards {
+    grid-template-columns: 1fr;
+    height: 80vh;
+    width: 80vw;
+  }
+
+  #contato li {
+    width: 80%;
   }
 }
