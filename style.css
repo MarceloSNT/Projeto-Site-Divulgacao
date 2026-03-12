@@ -26,6 +26,7 @@ svg {
   margin-right: 10px;
   color: var(--BlueMedium);
 }
+
 input {
   width: 80%;
   height: 40px;
@@ -34,6 +35,7 @@ input {
   padding: 5px;
   background-color: var(--DarkGray);
 }
+
 textarea {
   width: 80%;
   height: 125px;
@@ -42,6 +44,7 @@ textarea {
   padding: 5px;
   background-color: var(--DarkGray);
 }
+
 button {
   border: 2px solid var(--BlueLight);
   padding: 2px 5px;
@@ -54,25 +57,26 @@ button {
 #header {
   position: fixed;
   width: 100vw;
-
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.158);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
+
 #list-nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: end;
   align-items: center;
-
   background-color: var(--BlueDeep);
   padding: 10px 50px;
 }
+
 #list-nav > li,
 a {
   color: var(--WhiteSoft);
   text-decoration: none;
 }
+
 #list-nav a {
   padding: 2px 15px;
 }
@@ -86,7 +90,6 @@ a {
 
 #home {
   background-color: var(--BlueDeep);
-
   min-height: 100vh;
   padding: 25px;
   display: flex;
@@ -101,17 +104,15 @@ a {
   justify-content: center;
   align-items: center;
   width: 70vw;
-  height: 70vh;
-
+  min-height: 70vh;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.377);
   border-radius: 15px;
-
   background-color: var(--DarkGray);
 }
 
 #home-aside > img {
   width: 50vw;
-  height: 70vh;
+  height: auto;
 }
 
 #home-main {
@@ -119,10 +120,9 @@ a {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-
   color: var(--DarkGray);
   width: 100vw;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 #home-main > article {
@@ -130,6 +130,7 @@ a {
   text-align: center;
   line-height: 1.5;
 }
+
 #home-main > article > h1 {
   margin-top: 50px;
   color: var(--WhiteSoft);
@@ -142,7 +143,6 @@ a {
 
 #service {
   background-color: var(--DarkGray);
-
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -155,13 +155,12 @@ a {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-
   color: var(--WhiteSoft);
   padding: 25px;
-  height: 80vh;
   width: 50vw;
   text-align: center;
 }
+
 #service-content h2 {
   font-size: 1.5em;
   text-align: center;
@@ -171,11 +170,10 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-
   padding: 10px 50px;
-  height: 80vh;
   width: 80vw;
 }
+
 .card {
   background: var(--DarkGray);
   color: var(--WhiteSoft);
@@ -186,15 +184,18 @@ a {
   min-height: 150px;
   max-width: 250px;
 }
+
 .card:hover {
   background-color: var(--BlueMedium);
   color: var(--Black);
   border: 1px solid var(--BlueMedium);
   transition: 0.2s;
 }
+
 .title-card {
   font-size: 1.2em;
 }
+
 #contato {
   background-color: var(--BlueDeep);
   padding: 25px 0px;
@@ -212,7 +213,6 @@ a {
   background-color: var(--DarkGray);
   padding: 15px;
   text-align: center;
-
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -229,6 +229,7 @@ a {
   text-align: start;
   margin: 10px 0px;
 }
+
 #contato p a {
   color: var(--WhiteSoft);
   margin-left: 40px;
@@ -244,7 +245,6 @@ a {
 
 #contato-form form {
   height: 100%;
-
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -257,6 +257,7 @@ button:hover {
   color: var(--WhiteSoft);
   transition: 0.3s;
 }
+
 footer {
   background-color: var(--BlueDeep);
   padding: 15px 0px;
@@ -266,44 +267,21 @@ footer {
 
 @media screen and (min-width: 1200px) {
   #home {
-    background-color: var(--BlueDeep);
-
-    min-height: 100vh;
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
   }
 
   #home-aside {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
     width: 30vw;
-    height: 70vh;
-
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.377);
-    border-radius: 15px;
     margin: 0px 25px;
-
-    background-color: var(--DarkGray);
   }
 
   #home-aside > img {
     width: 25vw;
-    height: 70vh;
   }
 
   #home-main {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: start;
     align-items: start;
-
-    color: darkgray;
     width: 70vw;
-    height: 80vh;
   }
 
   #home-main > article {
@@ -313,143 +291,37 @@ footer {
     font-size: 1.2em;
     padding: 0px 35% 0px 5%;
   }
+
   #home-main > article > h1 {
-    color: var(--WhiteSoft);
     font-size: 3.5em;
   }
 
-  #home-main > article > p {
-    color: var(--WhiteSoft);
-  }
-
   #service {
-    background-color: var(--DarkGray);
-
-    min-height: 100vh;
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
   }
 
   #service-content {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    color: var(--WhiteSoft);
-    padding: 25px;
-    height: 80vh;
     width: 50vw;
-    text-align: center;
-  }
-  #service-content h2 {
-    font-size: 1.5em;
-    text-align: center;
   }
 
   #service-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-
-    padding: 10px 50px;
-    height: 80vh;
     width: 50vw;
-  }
-  .card {
-    background: var(--DarkGray);
-    color: var(--WhiteSoft);
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid var(--WhiteSoft);
-    margin: 15px 0px;
-    min-height: 150px;
-    max-width: 250px;
-  }
-  .card:hover {
-    background-color: var(--BlueMedium);
-    color: var(--Black);
-    border: 1px solid var(--BlueMedium);
-    transition: 0.2s;
-  }
-  .title-card {
-    font-size: 1.2em;
   }
 
   #contato {
-    background-color: var(--BlueDeep);
-
-    min-height: 100vh;
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
   }
 
   #contatos {
     width: 30vw;
-    height: 70vh;
-    border: 1px solid var(--DarkGray);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    background-color: var(--DarkGray);
-    padding: 15px;
-    text-align: center;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #contatos h3 {
-    margin-bottom: 50px;
-    color: var(--WhiteSoft);
-  }
-
-  #contato li {
-    color: var(--WhiteSoft);
-    text-align: start;
-    margin: 10px 0px;
-    width: 80%;
-  }
-  #contato p a {
-    color: var(--WhiteSoft);
-    margin-left: 40px;
   }
 
   #contato-form {
     width: 60vw;
-    height: 70vh;
-    border: 1px solid var(--DarkGray);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: var(--DarkGray);
-    padding: 15px;
-  }
-
-  #contato-form form {
-    height: 100%;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  button:hover {
-    border: 2px solid var(--BlueMedium);
-    background-color: var(--BlueMedium);
-    color: var(--WhiteSoft);
-    transition: 0.3s;
-  }
-  footer {
-    background-color: var(--BlueDeep);
-    padding: 15px 0px;
-    text-align: center;
-    color: var(--WhiteSoft);
   }
 }
 
@@ -457,17 +329,30 @@ footer {
   #home-main > article > h1 {
     font-size: 2em;
   }
+
   #service-cards {
     grid-template-columns: 1fr;
-    height: 80vh;
-    width: 80vw;
+    width: 90vw;
+  }
+
+  #contatos {
+    text-align: center;
+    align-items: center;
+  }
+
+  #contatos h3 {
+    text-align: center;
+    width: 100%;
   }
 
   #contato li {
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
+
   #contato p a {
-    width: 80%;
+    margin-left: 0;
+    display: inline-block;
+    text-align: center;
   }
 }
