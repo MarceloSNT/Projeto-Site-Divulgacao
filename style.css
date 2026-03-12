@@ -348,15 +348,17 @@ footer {
 
   #contato li {
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
 
   #contato p a {
     margin-left: 0;
     display: inline-block;
     text-align: center;
+    font: 0.8em;
   }
   hr {
-    width: 50%;
+    align-self: center;
+    width: 80%;
   }
 }
