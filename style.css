@@ -355,10 +355,10 @@ footer {
     margin-left: 0;
     display: inline-block;
     text-align: center;
-    font: 0.8em;
+    font-size: 0.8em;
   }
   hr {
-    align-self: center;
-    width: 80%;
+    width: 90%;
+    margin-left: 5%;
   }
 }
