@@ -11,9 +11,7 @@
   --WhiteSoft: #f7f7ff;
   --Black: #000000;
   --DarkGray: #1a1a1a;
-}
 
-body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -51,21 +49,25 @@ svg {
   border-radius: 15px;
   margin: 0px 25px;
 
-  background-color: var(--WhiteSoft);
+  background-color: var(--DarkGray);
 }
 
 #header {
   position: fixed;
   width: 100dvw;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.158);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 #list-nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
 
   background-color: var(--BlueDeep);
-  padding: 10px 0px;
+  padding: 10px 50px;
 }
 #list-nav > li,
 a {
@@ -188,10 +190,10 @@ a {
 #contatos {
   width: 30dvw;
   height: 70dvh;
-  border: 1px solid var(--WhiteSoft);
+  border: 1px solid var(--DarkGray);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-color: var(--WhiteSoft);
+  background-color: var(--DarkGray);
   padding: 15px;
   text-align: center;
 
@@ -203,25 +205,26 @@ a {
 
 #contatos h3 {
   margin-bottom: 50px;
+  color: var(--WhiteSoft);
 }
 
 #contato li {
-  color: var(--Black);
+  color: var(--WhiteSoft);
   text-align: start;
   margin: 10px 0px;
 }
 #contato p a {
-  color: var(--Black);
+  color: var(--WhiteSoft);
   margin-left: 40px;
 }
 
 #contato-form {
   width: 60dvw;
   height: 70dvh;
-  border: 1px solid var(--WhiteSoft);
+  border: 1px solid var(--DarkGray);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: var(--WhiteSoft);
+  background-color: var(--DarkGray);
   padding: 15px;
 }
 
@@ -239,6 +242,7 @@ input {
   border: 2px solid var(--BlueLight);
   margin: 10px 0px;
   padding: 5px;
+  background-color: var(--DarkGray);
 }
 textarea {
   width: 45dvw;
@@ -246,11 +250,12 @@ textarea {
   border: 2px solid var(--BlueLight);
   margin: 10px 0px;
   padding: 5px;
+  background-color: var(--DarkGray);
 }
 button {
   border: 2px solid var(--BlueLight);
   padding: 2px 5px;
-  background-color: var(--WhiteSoft);
+  background-color: var(--DarkGray);
   color: var(--BlueLight);
   height: 50px;
   width: 200px;
