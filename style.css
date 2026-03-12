@@ -464,6 +464,10 @@ footer {
   }
 
   #contato li {
+    text-align: center;
+    width: 80%;
+  }
+  #contato p a {
     width: 80%;
   }
 }
